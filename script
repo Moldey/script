@@ -426,7 +426,7 @@ Fly.BorderColor3 = Color3.fromRGB(0, 170, 0)
 Fly.Position = UDim2.new(0.281118572, 0, 0.822831929, 0)
 Fly.Size = UDim2.new(0, 88, 0, 24)
 Fly.Font = Enum.Font.SourceSans
-Fly.Text = "FLY (KEY)"
+Fly.Text = "FLY (G)"
 Fly.TextColor3 = Color3.fromRGB(0, 170, 0)
 Fly.TextSize = 20.000
 Fly.MouseButton1Down:connect(function()
