@@ -94,7 +94,7 @@ MainFrame.Parent = MoldyLumber
 MainFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 MainFrame.Position = UDim2.new(0.356553614, 0, 0.299684525, 0)
 MainFrame.Size = UDim2.new(0, 313, 0, 253)
-MainFrame.Draggable = true
+MainFrame.Draggable = false
 
 MainName.Name = "MainName"
 MainName.Parent = MainFrame
@@ -117,6 +117,12 @@ Credits.Font = Enum.Font.SourceSans
 Credits.Text = "Credits"
 Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
 Credits.TextSize = 14.000
+Credits.MouseButton1Down:connect(function()
+ DupeFrame.Visible = false
+ CreditsFrame.Visible = true
+ GuiHubFrame.Visible = false
+ LocalPlayer.Visible = false
+end)
 
 Others.Name = "Others"
 Others.Parent = MainFrame
@@ -139,6 +145,12 @@ GuiHub.Font = Enum.Font.SourceSans
 GuiHub.Text = "GUI Hub"
 GuiHub.TextColor3 = Color3.fromRGB(0, 0, 0)
 GuiHub.TextSize = 14.000
+GuiHub.MouseButton1Down:connect(function()
+ DupeFrame.Visible = false
+ CreditsFrame.Visible = false
+ GuiHubFrame.Visible = true
+ LocalPlayer.Visible = false
+end)
 
 Dupe.Name = "Dupe"
 Dupe.Parent = MainFrame
@@ -167,6 +179,13 @@ Main.Font = Enum.Font.SourceSans
 Main.Text = "Main"
 Main.TextColor3 = Color3.fromRGB(0, 0, 0)
 Main.TextSize = 14.000
+Main.Visible = true
+Main.MouseButton1Down:connect(function()
+ DupeFrame.Visible = false
+ CreditsFrame.Visible = false
+ GuiHubFrame.Visible = false
+ LocalPlayer.Visible = true
+end)
 
 comingsoon.Name = "comingsoon"
 comingsoon.Parent = MainFrame
@@ -344,12 +363,6 @@ GuiHubFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 GuiHubFrame.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
 GuiHubFrame.Size = UDim2.new(0, 202, 0, 187)
 GuiHubFrame.Visible = false
-GuiHubFrame.MouseButton1Down:connect(function()
- DupeFrame.Visible = false
- CreditsFrame.Visible = false
- GuiHubFrame.Visible = true
- LocalPlayer.Visible = false
-end)
 
 GuiHub_2.Name = "GuiHub"
 GuiHub_2.Parent = GuiHubFrame
@@ -379,12 +392,7 @@ LocalPlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
 LocalPlayer.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
 LocalPlayer.Size = UDim2.new(0, 202, 0, 187)
 LocalPlayer.Visible = false
-LocalPlayer.MouseButton1Down:connect(function()
- DupeFrame.Visible = false
- CreditsFrame.Visible = false
- GuiHubFrame.Visible = false
- LocalPlayer.Visible = true
-end)
+
 
 LocalPlayerName.Name = "LocalPlayerName"
 LocalPlayerName.Parent = LocalPlayer
