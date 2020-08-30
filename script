@@ -266,10 +266,9 @@ DupeMoney.BorderColor3 = Color3.fromRGB(0, 170, 0)
 DupeMoney.Position = UDim2.new(0.281118572, 0, 0.737270415, 0)
 DupeMoney.Size = UDim2.new(0, 88, 0, 24)
 DupeMoney.Font = Enum.Font.SourceSans
-DupeMoney.Text = "Dupe"
+DupeMoney.Text = "Dupe Money"
 DupeMoney.TextColor3 = Color3.fromRGB(0, 170, 0)
 DupeMoney.TextSize = 20.000
-
 DupeMoney.MouseButton1Down:connect(function()
 plr = game:GetService("Players").LocalPlayer
 slot = plr.CurrentSaveSlot
@@ -310,6 +309,9 @@ Slot4.Font = Enum.Font.SourceSans
 Slot4.Text = "4"
 Slot4.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot4.TextSize = 20.000
+Slot4.MouseButton1Down:connect(function()
+game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(4)
+end)
 
 Slot1.Name = "Slot1"
 Slot1.Parent = DupeFrame
@@ -321,6 +323,9 @@ Slot1.Font = Enum.Font.SourceSans
 Slot1.Text = "1"
 Slot1.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot1.TextSize = 20.000
+Slot1.MouseButton1Down:connect(function()
+game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(1)
+end)
 
 Slot5.Name = "Slot5"
 Slot5.Parent = DupeFrame
@@ -332,6 +337,9 @@ Slot5.Font = Enum.Font.SourceSans
 Slot5.Text = "5"
 Slot5.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot5.TextSize = 20.000
+Slot5.MouseButton1Down:connect(function()
+game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(5)
+end)
 
 Slot3.Name = "Slot3"
 Slot3.Parent = DupeFrame
@@ -343,6 +351,9 @@ Slot3.Font = Enum.Font.SourceSans
 Slot3.Text = "3"
 Slot3.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot3.TextSize = 20.000
+Slot3.MouseButton1Down:connect(function()
+game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(5)
+end)
 
 Slot2.Name = "Slot2"
 Slot2.Parent = DupeFrame
@@ -354,6 +365,9 @@ Slot2.Font = Enum.Font.SourceSans
 Slot2.Text = "2"
 Slot2.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot2.TextSize = 20.000
+Slot2.MouseButton1Down:connect(function()
+game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(2)
+end)
 
 Slot6.Name = "Slot6"
 Slot6.Parent = DupeFrame
@@ -365,6 +379,9 @@ Slot6.Font = Enum.Font.SourceSans
 Slot6.Text = "6"
 Slot6.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot6.TextSize = 20.000
+Slot6.MouseButton1Down:connect(function()
+game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(6)
+end)
 
 LoadSave.Name = "LoadSave"
 LoadSave.Parent = DupeFrame
