@@ -161,6 +161,14 @@ Credits.Font = Enum.Font.SourceSans
 Credits.Text = "Credits"
 Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
 Credits.TextSize = 14.000
+Credits.MouseButton1Down:connect(function()
+	CreditsFrame.Visible = true
+	CarOptionsFrame.Visible = false
+	DupeFrame.Visible = false
+	GuiHubFrame.Visible = false
+	DupeMoneyFrame.Visible = false
+	LocalPlayer.Visible = false
+end)
 
 DupeMoney.Name = "DupeMoney"
 DupeMoney.Parent = MainFrame
