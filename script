@@ -1,0 +1,453 @@
+--Moldy Lumber
+
+local MoldyLumber = Instance.new("ScreenGui")
+local StartFrame = Instance.new("Frame")
+local OpenButton = Instance.new("TextButton")
+local OpenVersion = Instance.new("TextLabel")
+local OpenName = Instance.new("TextLabel")
+local MainFrame = Instance.new("Frame")
+local MainName = Instance.new("TextLabel")
+local Credits = Instance.new("TextButton")
+local Others = Instance.new("TextButton")
+local GuiHub = Instance.new("TextButton")
+local Dupe = Instance.new("TextButton")
+local Main = Instance.new("TextButton")
+local comingsoon = Instance.new("TextButton")
+local CreditsFrame = Instance.new("Frame")
+local Credits_2 = Instance.new("TextLabel")
+local Text1c = Instance.new("TextLabel")
+local Creator = Instance.new("TextLabel")
+local Creator_2 = Instance.new("TextLabel")
+local DupeFrame = Instance.new("Frame")
+local DupeMoney = Instance.new("TextButton")
+local DupeName = Instance.new("TextLabel")
+local Slot4 = Instance.new("TextButton")
+local Slot1 = Instance.new("TextButton")
+local Slot5 = Instance.new("TextButton")
+local Slot3 = Instance.new("TextButton")
+local Slot2 = Instance.new("TextButton")
+local Slot6 = Instance.new("TextButton")
+local LoadSave = Instance.new("TextLabel")
+local GuiHubFrame = Instance.new("Frame")
+local GuiHub_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local LocalPlayer = Instance.new("Frame")
+local LocalPlayerName = Instance.new("TextLabel")
+local Walkspeed = Instance.new("TextButton")
+local Jumppower = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local Btools = Instance.new("TextButton")
+local Blueprints = Instance.new("TextButton")
+
+--Properties:
+
+MoldyLumber.Name = "Moldy Lumber"
+MoldyLumber.Parent = game.CoreGui
+
+StartFrame.Name = "StartFrame"
+StartFrame.Parent = MoldyLumber
+StartFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+StartFrame.BorderColor3 = Color3.fromRGB(50, 50, 50)
+StartFrame.Position = UDim2.new(0.416132003, 0, 0.318611979, 0)
+StartFrame.Size = UDim2.new(0, 182, 0, 230)
+StartFrame.Visible = false
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = StartFrame
+OpenButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+OpenButton.BorderColor3 = Color3.fromRGB(0, 170, 0)
+OpenButton.Position = UDim2.new(-0.00145041943, 0, 0.780784547, 0)
+OpenButton.Size = UDim2.new(0, 182, 0, 50)
+OpenButton.Font = Enum.Font.SourceSans
+OpenButton.Text = "OPEN"
+OpenButton.TextColor3 = Color3.fromRGB(0, 170, 0)
+OpenButton.TextSize = 30.000
+OpenButton.MouseButton1Down:connect(function()
+	MainFrame.Visible = true
+	StartFrame.Visible = false
+end)
+
+OpenVersion.Name = "OpenVersion"
+OpenVersion.Parent = StartFrame
+OpenVersion.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+OpenVersion.BorderColor3 = Color3.fromRGB(50, 50, 50)
+OpenVersion.Position = UDim2.new(-0.00145041943, 0, 0.391002595, 0)
+OpenVersion.Size = UDim2.new(0, 182, 0, 50)
+OpenVersion.Font = Enum.Font.SourceSans
+OpenVersion.Text = "v1.0.0"
+OpenVersion.TextColor3 = Color3.fromRGB(0, 170, 0)
+OpenVersion.TextSize = 30.000
+
+OpenName.Name = "OpenName"
+OpenName.Parent = StartFrame
+OpenName.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+OpenName.BorderColor3 = Color3.fromRGB(50, 50, 50)
+OpenName.Position = UDim2.new(-0.00145041943, 0, -0.00312715769, 0)
+OpenName.Size = UDim2.new(0, 182, 0, 50)
+OpenName.Font = Enum.Font.SourceSans
+OpenName.Text = "Moldy Lumber "
+OpenName.TextColor3 = Color3.fromRGB(0, 170, 0)
+OpenName.TextSize = 30.000
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = MoldyLumber
+MainFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MainFrame.Position = UDim2.new(0.356553614, 0, 0.299684525, 0)
+MainFrame.Size = UDim2.new(0, 313, 0, 253)
+MainFrame.Draggable = true
+
+MainName.Name = "MainName"
+MainName.Parent = MainFrame
+MainName.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MainName.BorderColor3 = Color3.fromRGB(50, 50, 50)
+MainName.Position = UDim2.new(0.178571716, 0, 0.0280819647, 0)
+MainName.Size = UDim2.new(0, 200, 0, 25)
+MainName.Font = Enum.Font.SourceSans
+MainName.Text = "Moldy Lumber GUI"
+MainName.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainName.TextSize = 40.000
+
+Credits.Name = "Credits"
+Credits.Parent = MainFrame
+Credits.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.Position = UDim2.new(0.0254317708, 0, 0.191204548, 0)
+Credits.Size = UDim2.new(0, 62, 0, 24)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 14.000
+
+Others.Name = "Others"
+Others.Parent = MainFrame
+Others.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Others.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Others.Position = UDim2.new(0.0254317708, 0, 0.705038548, 0)
+Others.Size = UDim2.new(0, 62, 0, 24)
+Others.Font = Enum.Font.SourceSans
+Others.Text = "Coming Soon"
+Others.TextColor3 = Color3.fromRGB(0, 0, 0)
+Others.TextSize = 14.000
+
+GuiHub.Name = "GuiHub"
+GuiHub.Parent = MainFrame
+GuiHub.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+GuiHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GuiHub.Position = UDim2.new(0.0254317708, 0, 0.578556299, 0)
+GuiHub.Size = UDim2.new(0, 62, 0, 24)
+GuiHub.Font = Enum.Font.SourceSans
+GuiHub.Text = "GUI Hub"
+GuiHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+GuiHub.TextSize = 14.000
+
+Dupe.Name = "Dupe"
+Dupe.Parent = MainFrame
+Dupe.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Dupe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dupe.Position = UDim2.new(0.0254317708, 0, 0.448121548, 0)
+Dupe.Size = UDim2.new(0, 62, 0, 24)
+Dupe.Font = Enum.Font.SourceSans
+Dupe.Text = "Dupe"
+Dupe.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dupe.TextSize = 14.000
+Dupe.MouseButton1Down:connect(function()
+ DupeFrame.Visible = true
+ CreditsFrame.Visible = false
+ GuiHubFrame.Visible = false
+ LocalPlayer.Visible = false
+end)
+
+Main.Name = "Main"
+Main.Parent = MainFrame
+Main.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.Position = UDim2.new(0.0254317708, 0, 0.317686766, 0)
+Main.Size = UDim2.new(0, 62, 0, 24)
+Main.Font = Enum.Font.SourceSans
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(0, 0, 0)
+Main.TextSize = 14.000
+
+comingsoon.Name = "comingsoon"
+comingsoon.Parent = MainFrame
+comingsoon.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+comingsoon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+comingsoon.Position = UDim2.new(0.0254317708, 0, 0.835473299, 0)
+comingsoon.Size = UDim2.new(0, 62, 0, 24)
+comingsoon.Font = Enum.Font.SourceSans
+comingsoon.Text = "Coming Soon"
+comingsoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+comingsoon.TextSize = 14.000
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = MainFrame
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+CreditsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CreditsFrame.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
+CreditsFrame.Size = UDim2.new(0, 202, 0, 187)
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = CreditsFrame
+Credits_2.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Credits_2.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Credits_2.Position = UDim2.new(0.166494608, 0, 0.0392565355, 0)
+Credits_2.Size = UDim2.new(0, 134, 0, 24)
+Credits_2.Font = Enum.Font.SourceSans
+Credits_2.Text = "Credits"
+Credits_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits_2.TextSize = 25.000
+
+Text1c.Name = "Text1c"
+Text1c.Parent = CreditsFrame
+Text1c.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Text1c.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Text1c.Position = UDim2.new(0.0299888551, 0, 0.206961989, 0)
+Text1c.Size = UDim2.new(0, 189, 0, 17)
+Text1c.Font = Enum.Font.SourceSans
+Text1c.Text = "Credits go to:"
+Text1c.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text1c.TextSize = 20.000
+
+Creator.Name = "Creator"
+Creator.Parent = CreditsFrame
+Creator.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Creator.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Creator.Position = UDim2.new(0.0792079195, 0, 0.417112291, 0)
+Creator.Size = UDim2.new(0, 171, 0, 11)
+Creator.Font = Enum.Font.SourceSans
+Creator.Text = "Creator: Moldy#0394"
+Creator.TextColor3 = Color3.fromRGB(0, 0, 0)
+Creator.TextSize = 20.000
+
+Creator_2.Name = "Creator"
+Creator_2.Parent = CreditsFrame
+Creator_2.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Creator_2.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Creator_2.Position = UDim2.new(0.0792079195, 0, 0.524064183, 0)
+Creator_2.Size = UDim2.new(0, 171, 0, 11)
+Creator_2.Font = Enum.Font.SourceSans
+Creator_2.Text = "Tester: CrustyCrab#1919"
+Creator_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Creator_2.TextSize = 20.000
+
+DupeFrame.Name = "DupeFrame"
+DupeFrame.Parent = MainFrame
+DupeFrame.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+DupeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DupeFrame.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
+DupeFrame.Size = UDim2.new(0, 202, 0, 187)
+DupeFrame.Visible = false
+
+DupeMoney.Name = "DupeMoney"
+DupeMoney.Parent = DupeFrame
+DupeMoney.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+DupeMoney.BorderColor3 = Color3.fromRGB(0, 170, 0)
+DupeMoney.Position = UDim2.new(0.281118572, 0, 0.737270415, 0)
+DupeMoney.Size = UDim2.new(0, 88, 0, 24)
+DupeMoney.Font = Enum.Font.SourceSans
+DupeMoney.Text = "Dupe Money"
+DupeMoney.TextColor3 = Color3.fromRGB(0, 170, 0)
+DupeMoney.TextSize = 20.000
+
+DupeName.Name = "DupeName"
+DupeName.Parent = DupeFrame
+DupeName.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+DupeName.BorderColor3 = Color3.fromRGB(0, 170, 0)
+DupeName.Position = UDim2.new(0.0445544571, 0, 0.0320855603, 0)
+DupeName.Size = UDim2.new(0, 184, 0, 35)
+DupeName.Font = Enum.Font.SourceSans
+DupeName.Text = "Dupe"
+DupeName.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeName.TextSize = 35.000
+
+Slot4.Name = "Slot4"
+Slot4.Parent = DupeFrame
+Slot4.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot4.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot4.Position = UDim2.new(0.162306681, 0, 0.52336669, 0)
+Slot4.Size = UDim2.new(0, 24, 0, 24)
+Slot4.Font = Enum.Font.SourceSans
+Slot4.Text = "4"
+Slot4.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot4.TextSize = 20.000
+
+Slot1.Name = "Slot1"
+Slot1.Parent = DupeFrame
+Slot1.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot1.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot1.Position = UDim2.new(0.162306681, 0, 0.346896082, 0)
+Slot1.Size = UDim2.new(0, 24, 0, 24)
+Slot1.Font = Enum.Font.SourceSans
+Slot1.Text = "1"
+Slot1.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot1.TextSize = 20.000
+
+Slot5.Name = "Slot5"
+Slot5.Parent = DupeFrame
+Slot5.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot5.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot5.Position = UDim2.new(0.439534396, 0, 0.52336669, 0)
+Slot5.Size = UDim2.new(0, 24, 0, 24)
+Slot5.Font = Enum.Font.SourceSans
+Slot5.Text = "5"
+Slot5.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot5.TextSize = 20.000
+
+Slot3.Name = "Slot3"
+Slot3.Parent = DupeFrame
+Slot3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot3.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot3.Position = UDim2.new(0.716762185, 0, 0.346896082, 0)
+Slot3.Size = UDim2.new(0, 24, 0, 24)
+Slot3.Font = Enum.Font.SourceSans
+Slot3.Text = "3"
+Slot3.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot3.TextSize = 20.000
+
+Slot2.Name = "Slot2"
+Slot2.Parent = DupeFrame
+Slot2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot2.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot2.Position = UDim2.new(0.439534426, 0, 0.346896112, 0)
+Slot2.Size = UDim2.new(0, 24, 0, 24)
+Slot2.Font = Enum.Font.SourceSans
+Slot2.Text = "2"
+Slot2.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot2.TextSize = 20.000
+
+Slot6.Name = "Slot6"
+Slot6.Parent = DupeFrame
+Slot6.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot6.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot6.Position = UDim2.new(0.716762125, 0, 0.52336669, 0)
+Slot6.Size = UDim2.new(0, 24, 0, 24)
+Slot6.Font = Enum.Font.SourceSans
+Slot6.Text = "6"
+Slot6.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot6.TextSize = 20.000
+
+LoadSave.Name = "LoadSave"
+LoadSave.Parent = DupeFrame
+LoadSave.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+LoadSave.BorderColor3 = Color3.fromRGB(0, 170, 0)
+LoadSave.Position = UDim2.new(0.0635783002, 0, 0.221092805, 0)
+LoadSave.Size = UDim2.new(0, 176, 0, 14)
+LoadSave.Font = Enum.Font.SourceSans
+LoadSave.Text = "Load Save"
+LoadSave.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoadSave.TextSize = 20.000
+
+GuiHubFrame.Name = "GuiHubFrame"
+GuiHubFrame.Parent = MainFrame
+GuiHubFrame.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+GuiHubFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GuiHubFrame.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
+GuiHubFrame.Size = UDim2.new(0, 202, 0, 187)
+GuiHubFrame.Visible = false
+GuiHubFrame.MouseButton1Down:connect(function()
+ DupeFrame.Visible = false
+ CreditsFrame.Visible = false
+ GuiHubFrame.Visible = true
+ LocalPlayer.Visible = false
+end)
+
+GuiHub_2.Name = "GuiHub"
+GuiHub_2.Parent = GuiHubFrame
+GuiHub_2.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+GuiHub_2.BorderColor3 = Color3.fromRGB(0, 170, 0)
+GuiHub_2.Position = UDim2.new(0.0445544571, 0, 0.0320855603, 0)
+GuiHub_2.Size = UDim2.new(0, 184, 0, 35)
+GuiHub_2.Font = Enum.Font.SourceSans
+GuiHub_2.Text = "GUI Hub"
+GuiHub_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+GuiHub_2.TextSize = 35.000
+
+TextButton.Parent = GuiHubFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.26099956, 0, 0.450521946, 0)
+TextButton.Size = UDim2.new(0, 95, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "OPEN"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+LocalPlayer.Name = "LocalPlayer"
+LocalPlayer.Parent = MainFrame
+LocalPlayer.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+LocalPlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LocalPlayer.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
+LocalPlayer.Size = UDim2.new(0, 202, 0, 187)
+LocalPlayer.Visible = false
+.MouseButton1Down:connect(function()
+ DupeFrame.Visible = false
+ CreditsFrame.Visible = false
+ GuiHubFrame.Visible = false
+ LocalPlayer.Visible = true
+end)
+
+LocalPlayerName.Name = "LocalPlayerName"
+LocalPlayerName.Parent = LocalPlayer
+LocalPlayerName.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+LocalPlayerName.BorderColor3 = Color3.fromRGB(0, 170, 0)
+LocalPlayerName.Position = UDim2.new(0.0445544571, 0, 0.0320855603, 0)
+LocalPlayerName.Size = UDim2.new(0, 184, 0, 35)
+LocalPlayerName.Font = Enum.Font.SourceSans
+LocalPlayerName.Text = "Main"
+LocalPlayerName.TextColor3 = Color3.fromRGB(0, 0, 0)
+LocalPlayerName.TextSize = 35.000
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = LocalPlayer
+Walkspeed.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Walkspeed.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Walkspeed.Position = UDim2.new(0.043494802, 0, 0.255986989, 0)
+Walkspeed.Size = UDim2.new(0, 88, 0, 24)
+Walkspeed.Font = Enum.Font.SourceSans
+Walkspeed.Text = "Walkspeed"
+Walkspeed.TextColor3 = Color3.fromRGB(0, 170, 0)
+Walkspeed.TextSize = 20.000
+
+Jumppower.Name = "Jumppower"
+Jumppower.Parent = LocalPlayer
+Jumppower.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Jumppower.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Jumppower.Position = UDim2.new(0.518742323, 0, 0.255986989, 0)
+Jumppower.Size = UDim2.new(0, 88, 0, 24)
+Jumppower.Font = Enum.Font.SourceSans
+Jumppower.Text = "Jump Power"
+Jumppower.TextColor3 = Color3.fromRGB(0, 170, 0)
+Jumppower.TextSize = 20.000
+
+Fly.Name = "Fly"
+Fly.Parent = LocalPlayer
+Fly.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Fly.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Fly.Position = UDim2.new(0.281118572, 0, 0.822831929, 0)
+Fly.Size = UDim2.new(0, 88, 0, 24)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "FLY (KEY)"
+Fly.TextColor3 = Color3.fromRGB(0, 170, 0)
+Fly.TextSize = 20.000
+
+Btools.Name = "Btools"
+Btools.Parent = LocalPlayer
+Btools.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Btools.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Btools.Position = UDim2.new(0.0434947908, 0, 0.432457566, 0)
+Btools.Size = UDim2.new(0, 88, 0, 24)
+Btools.Font = Enum.Font.SourceSans
+Btools.Text = "Btools"
+Btools.TextColor3 = Color3.fromRGB(0, 170, 0)
+Btools.TextSize = 20.000
+
+Blueprints.Name = "Blueprints"
+Blueprints.Parent = LocalPlayer
+Blueprints.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Blueprints.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Blueprints.Position = UDim2.new(0.518742323, 0, 0.432457566, 0)
+Blueprints.Size = UDim2.new(0, 88, 0, 24)
+Blueprints.Font = Enum.Font.SourceSans
+Blueprints.Text = "Blueprints"
+Blueprints.TextColor3 = Color3.fromRGB(0, 170, 0)
+Blueprints.TextSize = 20.000
