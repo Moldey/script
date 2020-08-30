@@ -1,25 +1,25 @@
---Moldy Lumber
-
+-- Moldy Lumber
 local MoldyLumber = Instance.new("ScreenGui")
 local StartFrame = Instance.new("Frame")
-local OpenButton = Instance.new("TextButton")
-local OpenVersion = Instance.new("TextLabel")
-local OpenName = Instance.new("TextLabel")
+local LoginText = Instance.new("TextLabel")
+local LoginName = Instance.new("TextLabel")
+local UserBox = Instance.new("TextBox")
+local PassBox = Instance.new("TextBox")
+local LoginButton = Instance.new("TextButton")
 local MainFrame = Instance.new("Frame")
 local MainName = Instance.new("TextLabel")
 local Credits = Instance.new("TextButton")
-local Others = Instance.new("TextButton")
+local DupeMoney = Instance.new("TextButton")
 local GuiHub = Instance.new("TextButton")
-local = Instance.new("TextButton")
+local Dupe = Instance.new("TextButton")
 local Main = Instance.new("TextButton")
-local comingsoon = Instance.new("TextButton")
+local CarOptions = Instance.new("TextButton")
 local CreditsFrame = Instance.new("Frame")
 local Credits_2 = Instance.new("TextLabel")
 local Text1c = Instance.new("TextLabel")
 local Creator = Instance.new("TextLabel")
 local Creator_2 = Instance.new("TextLabel")
 local DupeFrame = Instance.new("Frame")
-local DupeMoney = Instance.new("TextButton")
 local DupeName = Instance.new("TextLabel")
 local Slot4 = Instance.new("TextButton")
 local Slot1 = Instance.new("TextButton")
@@ -38,6 +38,19 @@ local Jumppower = Instance.new("TextButton")
 local Fly = Instance.new("TextButton")
 local Btools = Instance.new("TextButton")
 local Blueprints = Instance.new("TextButton")
+local DupeMoneyFrame = Instance.new("Frame")
+local DupeMoneyName = Instance.new("TextLabel")
+local Slot4M = Instance.new("TextButton")
+local Slot1M = Instance.new("TextButton")
+local Slot5M = Instance.new("TextButton")
+local Slot3M = Instance.new("TextButton")
+local Slot2M = Instance.new("TextButton")
+local Slot6M = Instance.new("TextButton")
+local LoadSaveWMoney = Instance.new("TextLabel")
+local CarOptionsFrame = Instance.new("Frame")
+local GuiHub_3 = Instance.new("TextLabel")
+local CarFly = Instance.new("TextButton")
+local CarSpeed = Instance.new("TextButton")
 
 --Properties:
 
@@ -48,55 +61,82 @@ StartFrame.Name = "StartFrame"
 StartFrame.Parent = MoldyLumber
 StartFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 StartFrame.BorderColor3 = Color3.fromRGB(50, 50, 50)
-StartFrame.Position = UDim2.new(0.416132003, 0, 0.318611979, 0)
-StartFrame.Size = UDim2.new(0, 182, 0, 230)
-StartFrame.Visible = true
+StartFrame.Position = UDim2.new(0.31103313, 0, 0.318611979, 0)
+StartFrame.Size = UDim2.new(0, 362, 0, 230)
 
-OpenButton.Name = "OpenButton"
-OpenButton.Parent = StartFrame
-OpenButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-OpenButton.BorderColor3 = Color3.fromRGB(0, 170, 0)
-OpenButton.Position = UDim2.new(-0.00145041943, 0, 0.780784547, 0)
-OpenButton.Size = UDim2.new(0, 182, 0, 50)
-OpenButton.Font = Enum.Font.SourceSans
-OpenButton.Text = "OPEN"
-OpenButton.TextColor3 = Color3.fromRGB(0, 170, 0)
-OpenButton.TextSize = 30.000
-OpenButton.MouseButton1Down:connect(function()
-	MainFrame.Visible = true
-	StartFrame.Visible = false
+LoginText.Name = "LoginText"
+LoginText.Parent = StartFrame
+LoginText.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LoginText.BorderColor3 = Color3.fromRGB(50, 50, 50)
+LoginText.Position = UDim2.new(0.22311011, 0, 0.184981525, 0)
+LoginText.Size = UDim2.new(0, 200, 0, 20)
+LoginText.Font = Enum.Font.SourceSans
+LoginText.Text = "LOGIN"
+LoginText.TextColor3 = Color3.fromRGB(0, 170, 0)
+LoginText.TextSize = 40.000
+
+LoginName.Name = "LoginName"
+LoginName.Parent = StartFrame
+LoginName.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LoginName.BorderColor3 = Color3.fromRGB(50, 50, 50)
+LoginName.Position = UDim2.new(0.223110139, 0, 0.0415032506, 0)
+LoginName.Size = UDim2.new(0, 200, 0, 20)
+LoginName.Font = Enum.Font.SourceSans
+LoginName.Text = "Moldy Lumber"
+LoginName.TextColor3 = Color3.fromRGB(0, 170, 0)
+LoginName.TextSize = 40.000
+
+UserBox.Name = "UserBox"
+UserBox.Parent = StartFrame
+UserBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+UserBox.BorderColor3 = Color3.fromRGB(0, 170, 0)
+UserBox.Position = UDim2.new(0.224150732, 0, 0.401275545, 0)
+UserBox.Size = UDim2.new(0, 200, 0, 29)
+UserBox.Font = Enum.Font.SourceSans
+UserBox.PlaceholderText = "Username"
+UserBox.Text = ""
+UserBox.TextColor3 = Color3.fromRGB(0, 170, 0)
+UserBox.TextSize = 30.000
+
+PassBox.Name = "PassBox"
+PassBox.Parent = StartFrame
+PassBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+PassBox.BorderColor3 = Color3.fromRGB(0, 170, 0)
+PassBox.Position = UDim2.new(0.224150732, 0, 0.563173771, 0)
+PassBox.Size = UDim2.new(0, 200, 0, 29)
+PassBox.Font = Enum.Font.SourceSans
+PassBox.PlaceholderText = "Password"
+PassBox.Text = ""
+PassBox.TextColor3 = Color3.fromRGB(0, 170, 0)
+PassBox.TextSize = 30.000
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = StartFrame
+LoginButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LoginButton.BorderColor3 = Color3.fromRGB(0, 170, 0)
+LoginButton.Position = UDim2.new(0.224150732, 0, 0.752352238, 0)
+LoginButton.Size = UDim2.new(0, 200, 0, 46)
+LoginButton.Font = Enum.Font.SourceSans
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(0, 170, 0)
+LoginButton.TextSize = 30.000
+LoginButton.MouseButton1Down:connect(function()
+	
+	if UserBox.Text == "Moldy" and PassBox.Text == "5291" then
+		MainFrame.Visible = true
+	    StartFrame.Visible = false
+	end
+	
 end)
 
-OpenVersion.Name = "OpenVersion"
-OpenVersion.Parent = StartFrame
-OpenVersion.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-OpenVersion.BorderColor3 = Color3.fromRGB(50, 50, 50)
-OpenVersion.Position = UDim2.new(-0.00145041943, 0, 0.391002595, 0)
-OpenVersion.Size = UDim2.new(0, 182, 0, 50)
-OpenVersion.Font = Enum.Font.SourceSans
-OpenVersion.Text = "v1.0.0"
-OpenVersion.TextColor3 = Color3.fromRGB(0, 170, 0)
-OpenVersion.TextSize = 30.000
 
-OpenName.Name = "OpenName"
-OpenName.Parent = StartFrame
-OpenName.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-OpenName.BorderColor3 = Color3.fromRGB(50, 50, 50)
-OpenName.Position = UDim2.new(-0.00145041943, 0, -0.00312715769, 0)
-OpenName.Size = UDim2.new(0, 182, 0, 50)
-OpenName.Font = Enum.Font.SourceSans
-OpenName.Text = "Moldy Lumber "
-OpenName.TextColor3 = Color3.fromRGB(0, 170, 0)
-OpenName.TextSize = 30.000
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = MoldyLumber
-MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 MainFrame.Position = UDim2.new(0.356553614, 0, 0.299684525, 0)
 MainFrame.Size = UDim2.new(0, 313, 0, 253)
 MainFrame.Visible = false
-MainFrame.Draggable = true
 
 MainName.Name = "MainName"
 MainName.Parent = MainFrame
@@ -119,56 +159,62 @@ Credits.Font = Enum.Font.SourceSans
 Credits.Text = "Credits"
 Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
 Credits.TextSize = 14.000
-Credits.MouseButton1Down:connect(function()
- DupeFrame.Visible = false
- CreditsFrame.Visible = true
- GuiHubFrame.Visible = false
- LocalPlayer.Visible = false
-end)
 
-Others.Name = "Others"
-Others.Parent = MainFrame
-Others.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
-Others.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Others.Position = UDim2.new(0.0254317708, 0, 0.705038548, 0)
-Others.Size = UDim2.new(0, 62, 0, 24)
-Others.Font = Enum.Font.SourceSans
-Others.Text = "Coming Soon"
-Others.TextColor3 = Color3.fromRGB(0, 0, 0)
-Others.TextSize = 14.000
+DupeMoney.Name = "DupeMoney"
+DupeMoney.Parent = MainFrame
+DupeMoney.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+DupeMoney.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DupeMoney.Position = UDim2.new(0.0254317708, 0, 0.578556299, 0)
+DupeMoney.Size = UDim2.new(0, 62, 0, 24)
+DupeMoney.Font = Enum.Font.SourceSans
+DupeMoney.Text = "Dupe Money"
+DupeMoney.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeMoney.TextSize = 13.000
+DupeMoney.MouseButton1Down:connect(function()
+	CreditsFrame.Visible = false
+	CarOptionsFrame.Visible = false
+	DupeFrame.Visible = false
+	GuiHubFrame.Visible = false
+	DupeMoneyFrame.Visible = true
+	LocalPlayer.Visible = false
+end)
 
 GuiHub.Name = "GuiHub"
 GuiHub.Parent = MainFrame
 GuiHub.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
 GuiHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GuiHub.Position = UDim2.new(0.0254317708, 0, 0.578556299, 0)
+GuiHub.Position = UDim2.new(0.0254317746, 0, 0.835473299, 0)
 GuiHub.Size = UDim2.new(0, 62, 0, 24)
 GuiHub.Font = Enum.Font.SourceSans
 GuiHub.Text = "GUI Hub"
 GuiHub.TextColor3 = Color3.fromRGB(0, 0, 0)
 GuiHub.TextSize = 14.000
 GuiHub.MouseButton1Down:connect(function()
- DupeFrame.Visible = false
- CreditsFrame.Visible = false
- GuiHubFrame.Visible = true
- LocalPlayer.Visible = false
+	CreditsFrame.Visible = false
+	CarOptionsFrame.Visible = false
+	DupeFrame.Visible = false
+	GuiHubFrame.Visible = true
+	DupeMoneyFrame.Visible = false
+	LocalPlayer.Visible = false
 end)
 
 Dupe.Name = "Dupe"
 Dupe.Parent = MainFrame
 Dupe.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
 Dupe.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Dupe.Position = UDim2.new(0.0254317708, 0, 0.448121548, 0)
+Dupe.Position = UDim2.new(0.0254317746, 0, 0.701086044, 0)
 Dupe.Size = UDim2.new(0, 62, 0, 24)
 Dupe.Font = Enum.Font.SourceSans
 Dupe.Text = "Dupe"
 Dupe.TextColor3 = Color3.fromRGB(0, 0, 0)
 Dupe.TextSize = 14.000
 Dupe.MouseButton1Down:connect(function()
- DupeFrame.Visible = true
- CreditsFrame.Visible = false
- GuiHubFrame.Visible = false
- LocalPlayer.Visible = false
+	CreditsFrame.Visible = false
+	CarOptionsFrame.Visible = false
+	DupeFrame.Visible = true
+	GuiHubFrame.Visible = false
+	DupeMoneyFrame.Visible = false
+	LocalPlayer.Visible = false
 end)
 
 Main.Name = "Main"
@@ -181,24 +227,33 @@ Main.Font = Enum.Font.SourceSans
 Main.Text = "Main"
 Main.TextColor3 = Color3.fromRGB(0, 0, 0)
 Main.TextSize = 14.000
-Main.Visible = true
 Main.MouseButton1Down:connect(function()
- DupeFrame.Visible = false
- CreditsFrame.Visible = false
- GuiHubFrame.Visible = false
- LocalPlayer.Visible = true
+	CreditsFrame.Visible = false
+	CarOptionsFrame.Visible = false
+	DupeFrame.Visible = false
+	GuiHubFrame.Visible = false
+	DupeMoneyFrame.Visible = false
+	LocalPlayer.Visible = true
 end)
 
-comingsoon.Name = "comingsoon"
-comingsoon.Parent = MainFrame
-comingsoon.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
-comingsoon.BorderColor3 = Color3.fromRGB(0, 0, 0)
-comingsoon.Position = UDim2.new(0.0254317708, 0, 0.835473299, 0)
-comingsoon.Size = UDim2.new(0, 62, 0, 24)
-comingsoon.Font = Enum.Font.SourceSans
-comingsoon.Text = "Coming Soon"
-comingsoon.TextColor3 = Color3.fromRGB(0, 0, 0)
-comingsoon.TextSize = 14.000
+CarOptions.Name = "CarOptions"
+CarOptions.Parent = MainFrame
+CarOptions.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+CarOptions.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CarOptions.Position = UDim2.new(0.0254317708, 0, 0.452074081, 0)
+CarOptions.Size = UDim2.new(0, 62, 0, 24)
+CarOptions.Font = Enum.Font.SourceSans
+CarOptions.Text = "Car Options"
+CarOptions.TextColor3 = Color3.fromRGB(0, 0, 0)
+CarOptions.TextSize = 14.000
+CarOptions.MouseButton1Down:connect(function()
+	CreditsFrame.Visible = false
+	CarOptionsFrame.Visible = true
+	DupeFrame.Visible = false
+	GuiHubFrame.Visible = false
+	DupeMoneyFrame.Visible = false
+	LocalPlayer.Visible = false
+end)
 
 CreditsFrame.Name = "CreditsFrame"
 CreditsFrame.Parent = MainFrame
@@ -259,17 +314,6 @@ DupeFrame.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
 DupeFrame.Size = UDim2.new(0, 202, 0, 187)
 DupeFrame.Visible = false
 
-DupeMoney.Name = "DupeMoney"
-DupeMoney.Parent = DupeFrame
-DupeMoney.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-DupeMoney.BorderColor3 = Color3.fromRGB(0, 170, 0)
-DupeMoney.Position = UDim2.new(0.281118572, 0, 0.737270415, 0)
-DupeMoney.Size = UDim2.new(0, 88, 0, 24)
-DupeMoney.Font = Enum.Font.SourceSans
-DupeMoney.Text = "Dupe Money"
-DupeMoney.TextColor3 = Color3.fromRGB(0, 170, 0)
-DupeMoney.TextSize = 20.000
-
 DupeName.Name = "DupeName"
 DupeName.Parent = DupeFrame
 DupeName.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
@@ -285,91 +329,92 @@ Slot4.Name = "Slot4"
 Slot4.Parent = DupeFrame
 Slot4.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Slot4.BorderColor3 = Color3.fromRGB(0, 170, 0)
-Slot4.Position = UDim2.new(0.162306681, 0, 0.52336669, 0)
+Slot4.Position = UDim2.new(0.162306681, 0, 0.608928204, 0)
 Slot4.Size = UDim2.new(0, 24, 0, 24)
 Slot4.Font = Enum.Font.SourceSans
 Slot4.Text = "4"
 Slot4.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot4.TextSize = 20.000
 Slot4.MouseButton1Down:connect(function()
-game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(4)
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(4)
 end)
+
 
 Slot1.Name = "Slot1"
 Slot1.Parent = DupeFrame
 Slot1.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Slot1.BorderColor3 = Color3.fromRGB(0, 170, 0)
-Slot1.Position = UDim2.new(0.162306681, 0, 0.346896082, 0)
+Slot1.Position = UDim2.new(0.162306681, 0, 0.432457566, 0)
 Slot1.Size = UDim2.new(0, 24, 0, 24)
 Slot1.Font = Enum.Font.SourceSans
 Slot1.Text = "1"
 Slot1.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot1.TextSize = 20.000
 Slot1.MouseButton1Down:connect(function()
-game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(1)
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(1)
 end)
 
 Slot5.Name = "Slot5"
 Slot5.Parent = DupeFrame
 Slot5.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Slot5.BorderColor3 = Color3.fromRGB(0, 170, 0)
-Slot5.Position = UDim2.new(0.439534396, 0, 0.52336669, 0)
+Slot5.Position = UDim2.new(0.439534396, 0, 0.608928204, 0)
 Slot5.Size = UDim2.new(0, 24, 0, 24)
 Slot5.Font = Enum.Font.SourceSans
 Slot5.Text = "5"
 Slot5.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot5.TextSize = 20.000
 Slot5.MouseButton1Down:connect(function()
-game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(5)
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(5)
 end)
 
 Slot3.Name = "Slot3"
 Slot3.Parent = DupeFrame
 Slot3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Slot3.BorderColor3 = Color3.fromRGB(0, 170, 0)
-Slot3.Position = UDim2.new(0.716762185, 0, 0.346896082, 0)
+Slot3.Position = UDim2.new(0.716762185, 0, 0.432457566, 0)
 Slot3.Size = UDim2.new(0, 24, 0, 24)
 Slot3.Font = Enum.Font.SourceSans
 Slot3.Text = "3"
 Slot3.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot3.TextSize = 20.000
 Slot3.MouseButton1Down:connect(function()
-game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(3)
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(3)
 end)
 
 Slot2.Name = "Slot2"
 Slot2.Parent = DupeFrame
 Slot2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Slot2.BorderColor3 = Color3.fromRGB(0, 170, 0)
-Slot2.Position = UDim2.new(0.439534426, 0, 0.346896112, 0)
+Slot2.Position = UDim2.new(0.439534426, 0, 0.432457626, 0)
 Slot2.Size = UDim2.new(0, 24, 0, 24)
 Slot2.Font = Enum.Font.SourceSans
 Slot2.Text = "2"
 Slot2.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot2.TextSize = 20.000
 Slot2.MouseButton1Down:connect(function()
-game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(2)
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(2)
 end)
 
 Slot6.Name = "Slot6"
 Slot6.Parent = DupeFrame
 Slot6.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Slot6.BorderColor3 = Color3.fromRGB(0, 170, 0)
-Slot6.Position = UDim2.new(0.716762125, 0, 0.52336669, 0)
+Slot6.Position = UDim2.new(0.716762125, 0, 0.608928204, 0)
 Slot6.Size = UDim2.new(0, 24, 0, 24)
 Slot6.Font = Enum.Font.SourceSans
 Slot6.Text = "6"
 Slot6.TextColor3 = Color3.fromRGB(0, 170, 0)
 Slot6.TextSize = 20.000
 Slot6.MouseButton1Down:connect(function()
-game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(6)
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(6)
 end)
 
 LoadSave.Name = "LoadSave"
 LoadSave.Parent = DupeFrame
 LoadSave.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
 LoadSave.BorderColor3 = Color3.fromRGB(0, 170, 0)
-LoadSave.Position = UDim2.new(0.0635783002, 0, 0.221092805, 0)
+LoadSave.Position = UDim2.new(0.0586278066, 0, 0.269221157, 0)
 LoadSave.Size = UDim2.new(0, 176, 0, 14)
 LoadSave.Font = Enum.Font.SourceSans
 LoadSave.Text = "Load Save"
@@ -405,7 +450,7 @@ TextButton.Text = "OPEN"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 TextButton.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://pastebin.com/raw/8y9gMSkr", true))()
+	print("Baby Im A Fireeeeeeeee Work!")
 end)
 
 LocalPlayer.Name = "LocalPlayer"
@@ -415,6 +460,7 @@ LocalPlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
 LocalPlayer.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
 LocalPlayer.Size = UDim2.new(0, 202, 0, 187)
 LocalPlayer.Visible = false
+
 LocalPlayerName.Name = "LocalPlayerName"
 LocalPlayerName.Parent = LocalPlayer
 LocalPlayerName.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
@@ -437,13 +483,13 @@ Walkspeed.Text = "Walkspeed"
 Walkspeed.TextColor3 = Color3.fromRGB(0, 170, 0)
 Walkspeed.TextSize = 20.000
 Walkspeed.MouseButton1Down:connect(function()
-local speed = 100 -- Add the amount of speed you want here!
- 
-spawn(function()
-while wait() do
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
-end
-end)
+	local speed = 100 -- Add the amount of speed you want here!
+	
+	spawn(function()
+		while wait() do
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+		end
+	end)
 end)
 
 Jumppower.Name = "Jumppower"
@@ -457,13 +503,13 @@ Jumppower.Text = "Jump Power"
 Jumppower.TextColor3 = Color3.fromRGB(0, 170, 0)
 Jumppower.TextSize = 20.000
 Jumppower.MouseButton1Down:connect(function()
-local jump = 100 -- Add the amount of jump power you want here!
- 
-spawn(function()
-while wait() do
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = jump
-end
-end)
+	local jump = 150 -- Add the amount of jump power you want here!
+	
+	spawn(function()
+		while wait() do
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = jump
+		end
+	end)
 end)
 
 Fly.Name = "Fly"
@@ -473,90 +519,90 @@ Fly.BorderColor3 = Color3.fromRGB(0, 170, 0)
 Fly.Position = UDim2.new(0.281118572, 0, 0.822831929, 0)
 Fly.Size = UDim2.new(0, 88, 0, 24)
 Fly.Font = Enum.Font.SourceSans
-Fly.Text = "FLY (G)"
+Fly.Text = "FLY (KEY)"
 Fly.TextColor3 = Color3.fromRGB(0, 170, 0)
 Fly.TextSize = 20.000
 Fly.MouseButton1Down:connect(function()
-repeat wait() 
-    until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
-local mouse = game.Players.LocalPlayer:GetMouse() 
-repeat wait() until mouse
-local plr = game.Players.LocalPlayer 
-local torso = plr.Character.Head 
-local flying = false
-local deb = true 
-local ctrl = {f = 0, b = 0, l = 0, r = 0} 
-local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
-local maxspeed = 400 
-local speed = 5000 
- 
-function Fly() 
-local bg = Instance.new("BodyGyro", torso) 
-bg.P = 9e4 
-bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
-bg.cframe = torso.CFrame 
-local bv = Instance.new("BodyVelocity", torso) 
-bv.velocity = Vector3.new(0,0.1,0) 
-bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
-repeat wait() 
-plr.Character.Humanoid.PlatformStand = true 
-if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
-speed = speed+.5+(speed/maxspeed) 
-if speed > maxspeed then 
-speed = maxspeed 
-end 
-elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
-speed = speed-1 
-if speed < 0 then 
-speed = 0 
-end 
-end 
-if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
-bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
-lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
-elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
-bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
-else 
-bv.velocity = Vector3.new(0,0.1,0) 
-end 
-bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
-until not flying 
-ctrl = {f = 0, b = 0, l = 0, r = 0} 
-lastctrl = {f = 0, b = 0, l = 0, r = 0} 
-speed = 0 
-bg:Destroy() 
-bv:Destroy() 
-plr.Character.Humanoid.PlatformStand = false 
-end 
-mouse.KeyDown:connect(function(key) 
-if key:lower() == "g" then 
-if flying then flying = false 
-else 
-flying = true 
-Fly() 
-end 
-elseif key:lower() == "w" then 
-ctrl.f = 1 
-elseif key:lower() == "s" then 
-ctrl.b = -1 
-elseif key:lower() == "a" then 
-ctrl.l = -1 
-elseif key:lower() == "d" then 
-ctrl.r = 1 
-end 
-end) 
-mouse.KeyUp:connect(function(key) 
-if key:lower() == "w" then 
-ctrl.f = 0 
-elseif key:lower() == "s" then 
-ctrl.b = 0 
-elseif key:lower() == "a" then 
-ctrl.l = 0 
-elseif key:lower() == "d" then 
-ctrl.r = 0 
-end 
-end)
-Fly()
+	repeat wait() 
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	local mouse = game.Players.LocalPlayer:GetMouse() 
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer 
+	local torso = plr.Character.Head 
+	local flying = false
+	local deb = true 
+	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local maxspeed = 400 
+	local speed = 5000 
+	
+	function Fly() 
+		local bg = Instance.new("BodyGyro", torso) 
+		bg.P = 9e4 
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		bg.cframe = torso.CFrame 
+		local bv = Instance.new("BodyVelocity", torso) 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+		repeat wait() 
+			plr.Character.Humanoid.PlatformStand = true 
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+				speed = speed+.5+(speed/maxspeed) 
+				if speed > maxspeed then 
+					speed = maxspeed 
+				end 
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+				speed = speed-1 
+				if speed < 0 then 
+					speed = 0 
+				end 
+			end 
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+			else 
+				bv.velocity = Vector3.new(0,0.1,0) 
+			end 
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+		until not flying 
+		ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		speed = 0 
+		bg:Destroy() 
+		bv:Destroy() 
+		plr.Character.Humanoid.PlatformStand = false 
+	end 
+	mouse.KeyDown:connect(function(key) 
+		if key:lower() == "g" then 
+			if flying then flying = false 
+			else 
+				flying = true 
+				Fly() 
+			end 
+		elseif key:lower() == "w" then 
+			ctrl.f = 1 
+		elseif key:lower() == "s" then 
+			ctrl.b = -1 
+		elseif key:lower() == "a" then 
+			ctrl.l = -1 
+		elseif key:lower() == "d" then 
+			ctrl.r = 1 
+		end 
+	end) 
+	mouse.KeyUp:connect(function(key) 
+		if key:lower() == "w" then 
+			ctrl.f = 0 
+		elseif key:lower() == "s" then 
+			ctrl.b = 0 
+		elseif key:lower() == "a" then 
+			ctrl.l = 0 
+		elseif key:lower() == "d" then 
+			ctrl.r = 0 
+		end 
+	end)
+	Fly()
 end)
 
 Btools.Name = "Btools"
@@ -570,81 +616,81 @@ Btools.Text = "Btools"
 Btools.TextColor3 = Color3.fromRGB(0, 170, 0)
 Btools.TextSize = 20.000
 Btools.MouseButton1Down:connect(function()
-local LocalPlayer = game:GetService("Players").LocalPlayer
-local mouse = LocalPlayer:GetMouse()
-local movetool = Instance.new("Tool", LocalPlayer.Backpack)
-local deletetool = Instance.new("Tool", LocalPlayer.Backpack)
-local undotool = Instance.new("Tool", LocalPlayer.Backpack)
-local identifytool = Instance.new("Tool", LocalPlayer.Backpack)
-local movedetect = false
-local movingpart = nil
-local movetransparency = 0
-if editedparts == nil then
-editedparts = {}
-parentfix = {}
-positionfix = {}
-end
-deletetool.Name = "Delete"
-undotool.Name = "Undo"
-identifytool.Name = "Identify"
-movetool.Name = "Move"
-undotool.CanBeDropped = false
-deletetool.CanBeDropped = false
-identifytool.CanBeDropped = false
-movetool.CanBeDropped = false
-undotool.RequiresHandle = false
-deletetool.RequiresHandle = false
-identifytool.RequiresHandle = false
-movetool.RequiresHandle = false
-local function createnotification(title, text)
-game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = title;
-Text = text;
-Duration = 1;
-})
-end
-deletetool.Activated:Connect(function()
-createnotification("Delete Tool", "You have deleted "..mouse.Target.Name)
-table.insert(editedparts, mouse.Target)
-table.insert(parentfix, mouse.Target.Parent)
-table.insert(positionfix, mouse.Target.CFrame)
-mouse.Target.Parent = nil
-end)
-undotool.Activated:Connect(function()
-createnotification("Undo Tool", "You have undone "..editedparts[#editedparts].Name)
-editedparts[#editedparts].Parent = parentfix[#parentfix]
-editedparts[#editedparts].CFrame = positionfix[#positionfix]
-table.remove(positionfix, #positionfix)
-table.remove(editedparts, #editedparts)
-table.remove(parentfix, #parentfix)
-end)
-identifytool.Activated:Connect(function()
-createnotification("Identify Tool", "Instance: "..mouse.Target.ClassName.."\nName: "..mouse.Target.Name)
-end)
-movetool.Activated:Connect(function()
-createnotification("Move Tool", "You are moving: "..mouse.Target.Name)
-movingpart = mouse.Target
-movedetect = true
-movingpart.CanCollide = false
-movetransparency = movingpart.Transparency
-movingpart.Transparency = 0.5
-mouse.TargetFilter = movingpart
-table.insert(editedparts, movingpart)
-table.insert(parentfix, movingpart.Parent)
-table.insert(positionfix, movingpart.CFrame)
-movingpart.Transparency = movingpart.Transparency / 2
-repeat
-mouse.Move:Wait()
-movingpart.CFrame = CFrame.new(mouse.Hit.p)
-until movedetect == false
-end)
-movetool.Deactivated:Connect(function()
-createnotification("Move Tool", "You have stopped moving: "..mouse.Target.Name)
-movingpart.CanCollide = true
-movedetect = false
-mouse.TargetFilter = nil
-movingpart.Transparency = movetransparenc
-end)
+	local LocalPlayer = game:GetService("Players").LocalPlayer
+	local mouse = LocalPlayer:GetMouse()
+	local movetool = Instance.new("Tool", LocalPlayer.Backpack)
+	local deletetool = Instance.new("Tool", LocalPlayer.Backpack)
+	local undotool = Instance.new("Tool", LocalPlayer.Backpack)
+	local identifytool = Instance.new("Tool", LocalPlayer.Backpack)
+	local movedetect = false
+	local movingpart = nil
+	local movetransparency = 0
+	if editedparts == nil then
+		editedparts = {}
+		parentfix = {}
+		positionfix = {}
+	end
+	deletetool.Name = "Delete"
+	undotool.Name = "Undo"
+	identifytool.Name = "Identify"
+	movetool.Name = "Move"
+	undotool.CanBeDropped = false
+	deletetool.CanBeDropped = false
+	identifytool.CanBeDropped = false
+	movetool.CanBeDropped = false
+	undotool.RequiresHandle = false
+	deletetool.RequiresHandle = false
+	identifytool.RequiresHandle = false
+	movetool.RequiresHandle = false
+	local function createnotification(title, text)
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = title;
+			Text = text;
+			Duration = 1;
+		})
+	end
+	deletetool.Activated:Connect(function()
+		createnotification("Delete Tool", "You have deleted "..mouse.Target.Name)
+		table.insert(editedparts, mouse.Target)
+		table.insert(parentfix, mouse.Target.Parent)
+		table.insert(positionfix, mouse.Target.CFrame)
+		mouse.Target.Parent = nil
+	end)
+	undotool.Activated:Connect(function()
+		createnotification("Undo Tool", "You have undone "..editedparts[#editedparts].Name)
+		editedparts[#editedparts].Parent = parentfix[#parentfix]
+		editedparts[#editedparts].CFrame = positionfix[#positionfix]
+		table.remove(positionfix, #positionfix)
+		table.remove(editedparts, #editedparts)
+		table.remove(parentfix, #parentfix)
+	end)
+	identifytool.Activated:Connect(function()
+		createnotification("Identify Tool", "Instance: "..mouse.Target.ClassName.."\nName: "..mouse.Target.Name)
+	end)
+	movetool.Activated:Connect(function()
+		createnotification("Move Tool", "You are moving: "..mouse.Target.Name)
+		movingpart = mouse.Target
+		movedetect = true
+		movingpart.CanCollide = false
+		movetransparency = movingpart.Transparency
+		movingpart.Transparency = 0.5
+		mouse.TargetFilter = movingpart
+		table.insert(editedparts, movingpart)
+		table.insert(parentfix, movingpart.Parent)
+		table.insert(positionfix, movingpart.CFrame)
+		movingpart.Transparency = movingpart.Transparency / 2
+		repeat
+			mouse.Move:Wait()
+			movingpart.CFrame = CFrame.new(mouse.Hit.p)
+		until movedetect == false
+	end)
+	movetool.Deactivated:Connect(function()
+		createnotification("Move Tool", "You have stopped moving: "..mouse.Target.Name)
+		movingpart.CanCollide = true
+		movedetect = false
+		mouse.TargetFilter = nil
+		movingpart.Transparency = movetransparenc
+	end)
 end)
 
 Blueprints.Name = "Blueprints"
@@ -658,8 +704,317 @@ Blueprints.Text = "Blueprints"
 Blueprints.TextColor3 = Color3.fromRGB(0, 170, 0)
 Blueprints.TextSize = 20.000
 Blueprints.MouseButton1Down:connect(function()
-for i,v in pairs(game.ReplicatedStorage.Purchasables.Structures.BlueprintStructures:GetChildren()) do
-local clone = v:Clone()
-clone.Parent = game.Players.LocalPlayer.PlayerBlueprints.Blueprints
+	for i,v in pairs(game.ReplicatedStorage.Purchasables.Structures.BlueprintStructures:GetChildren()) do
+		local clone = v:Clone()
+		clone.Parent = game.Players.LocalPlayer.PlayerBlueprints.Blueprints
+	end
+end)
+
+
+DupeMoneyFrame.Name = "DupeMoneyFrame"
+DupeMoneyFrame.Parent = MainFrame
+DupeMoneyFrame.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+DupeMoneyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DupeMoneyFrame.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
+DupeMoneyFrame.Size = UDim2.new(0, 202, 0, 187)
+DupeMoneyFrame.Visible = false
+
+DupeMoneyName.Name = "DupeMoneyName"
+DupeMoneyName.Parent = DupeMoneyFrame
+DupeMoneyName.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+DupeMoneyName.BorderColor3 = Color3.fromRGB(0, 170, 0)
+DupeMoneyName.Position = UDim2.new(0.0445544571, 0, 0.0320855603, 0)
+DupeMoneyName.Size = UDim2.new(0, 184, 0, 35)
+DupeMoneyName.Font = Enum.Font.SourceSans
+DupeMoneyName.Text = "Dupe Money"
+DupeMoneyName.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeMoneyName.TextSize = 35.000
+
+Slot4M.Name = "Slot4M"
+Slot4M.Parent = DupeMoneyFrame
+Slot4M.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot4M.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot4M.Position = UDim2.new(0.162306681, 0, 0.608928204, 0)
+Slot4M.Size = UDim2.new(0, 24, 0, 24)
+Slot4M.Font = Enum.Font.SourceSans
+Slot4M.Text = "4"
+Slot4M.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot4M.TextSize = 20.000
+Slot4M.MouseButton1Down:connect(function()
+game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(4)
+game.ReplicatedStorage.Transactions.ClientToServer.Donate:InvokeServer(game.Players.LocalPlayer, game.Players.LocalPlayer.leaderstats.Money.Value, 1)
+end)
+
+Slot1M.Name = "Slot1M"
+Slot1M.Parent = DupeMoneyFrame
+Slot1M.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot1M.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot1M.Position = UDim2.new(0.162306681, 0, 0.432457566, 0)
+Slot1M.Size = UDim2.new(0, 24, 0, 24)
+Slot1M.Font = Enum.Font.SourceSans
+Slot1M.Text = "1"
+Slot1M.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot1M.TextSize = 20.000
+Slot1M.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(1)
+	game.ReplicatedStorage.Transactions.ClientToServer.Donate:InvokeServer(game.Players.LocalPlayer, game.Players.LocalPlayer.leaderstats.Money.Value, 1)
+end)
+
+Slot5M.Name = "Slot5M"
+Slot5M.Parent = DupeMoneyFrame
+Slot5M.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot5M.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot5M.Position = UDim2.new(0.439534396, 0, 0.608928204, 0)
+Slot5M.Size = UDim2.new(0, 24, 0, 24)
+Slot5M.Font = Enum.Font.SourceSans
+Slot5M.Text = "5"
+Slot5M.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot5M.TextSize = 20.000
+Slot5M.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(5)
+	game.ReplicatedStorage.Transactions.ClientToServer.Donate:InvokeServer(game.Players.LocalPlayer, game.Players.LocalPlayer.leaderstats.Money.Value, 1)
+end)
+
+Slot3M.Name = "Slot3M"
+Slot3M.Parent = DupeMoneyFrame
+Slot3M.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot3M.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot3M.Position = UDim2.new(0.716762185, 0, 0.432457566, 0)
+Slot3M.Size = UDim2.new(0, 24, 0, 24)
+Slot3M.Font = Enum.Font.SourceSans
+Slot3M.Text = "3"
+Slot3M.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot3M.TextSize = 20.000
+Slot3M.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(3)
+	game.ReplicatedStorage.Transactions.ClientToServer.Donate:InvokeServer(game.Players.LocalPlayer, game.Players.LocalPlayer.leaderstats.Money.Value, 1)
+end)
+
+Slot2M.Name = "Slot2M"
+Slot2M.Parent = DupeMoneyFrame
+Slot2M.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot2M.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot2M.Position = UDim2.new(0.439534426, 0, 0.432457626, 0)
+Slot2M.Size = UDim2.new(0, 24, 0, 24)
+Slot2M.Font = Enum.Font.SourceSans
+Slot2M.Text = "2"
+Slot2M.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot2M.TextSize = 20.000
+Slot2M.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(2)
+	game.ReplicatedStorage.Transactions.ClientToServer.Donate:InvokeServer(game.Players.LocalPlayer, game.Players.LocalPlayer.leaderstats.Money.Value, 1)
+end)
+
+Slot6M.Name = "Slot6M"
+Slot6M.Parent = DupeMoneyFrame
+Slot6M.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Slot6M.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Slot6M.Position = UDim2.new(0.716762125, 0, 0.608928204, 0)
+Slot6M.Size = UDim2.new(0, 24, 0, 24)
+Slot6M.Font = Enum.Font.SourceSans
+Slot6M.Text = "6"
+Slot6M.TextColor3 = Color3.fromRGB(0, 170, 0)
+Slot6M.TextSize = 20.000
+Slot6M.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(6)
+	game.ReplicatedStorage.Transactions.ClientToServer.Donate:InvokeServer(game.Players.LocalPlayer, game.Players.LocalPlayer.leaderstats.Money.Value, 1)
+end)
+
+LoadSaveWMoney.Name = "LoadSaveWMoney"
+LoadSaveWMoney.Parent = DupeMoneyFrame
+LoadSaveWMoney.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+LoadSaveWMoney.BorderColor3 = Color3.fromRGB(0, 170, 0)
+LoadSaveWMoney.Position = UDim2.new(0.0586278066, 0, 0.269221157, 0)
+LoadSaveWMoney.Size = UDim2.new(0, 176, 0, 14)
+LoadSaveWMoney.Font = Enum.Font.SourceSans
+LoadSaveWMoney.Text = "Load The Save With Money"
+LoadSaveWMoney.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoadSaveWMoney.TextSize = 20.000
+
+CarOptionsFrame.Name = "CarOptionsFrame"
+CarOptionsFrame.Parent = MainFrame
+CarOptionsFrame.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+CarOptionsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CarOptionsFrame.Position = UDim2.new(0.271079391, 0, 0.189623564, 0)
+CarOptionsFrame.Size = UDim2.new(0, 202, 0, 187)
+CarOptionsFrame.Visible = false
+
+GuiHub_3.Name = "GuiHub"
+GuiHub_3.Parent = CarOptionsFrame
+GuiHub_3.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+GuiHub_3.BorderColor3 = Color3.fromRGB(0, 170, 0)
+GuiHub_3.Position = UDim2.new(0.0445544571, 0, 0.0320855603, 0)
+GuiHub_3.Size = UDim2.new(0, 184, 0, 35)
+GuiHub_3.Font = Enum.Font.SourceSans
+GuiHub_3.Text = "Car Options"
+GuiHub_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+GuiHub_3.TextSize = 35.000
+
+CarFly.Name = "CarFly"
+CarFly.Parent = CarOptionsFrame
+CarFly.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CarFly.BorderColor3 = Color3.fromRGB(0, 170, 0)
+CarFly.Position = UDim2.new(0.0299173482, 0, 0.278249472, 0)
+CarFly.Size = UDim2.new(0, 92, 0, 25)
+CarFly.Font = Enum.Font.SourceSans
+CarFly.Text = "Car Fly ()"
+CarFly.TextColor3 = Color3.fromRGB(0, 170, 0)
+CarFly.TextSize = 14.000
+CarFly.MouseButton1Click:connect(function()
+	local Tool = Instance.new("HopperBin")
+	Tool.Parent = game.Players.LocalPlayer.Backpack
+	Tool.Name = "กดปุ่ม R บิน"
+	local hint = Instance.new("Hint",game.Players.LocalPlayer.PlayerGui)
+	hint.Text = "กดปุ่ม R เพื่อบิน"
+	hint.Name = game.JobId
+	repeat wait()
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer
+	local torso = plr.Character.Torso
+	local flying = true
+	local deb = true
+	local ctrl = {f = 0, b = 0, l = 0, r = 0}
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+	local maxspeed = 200
+	local speed = 0
+	
+	function Fly()
+		local bg = Instance.new("BodyGyro", torso)
+		bg.P = 9e4
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		bg.cframe = torso.CFrame
+		local bv = Instance.new("BodyVelocity", torso)
+		bv.velocity = Vector3.new(0,0.1,0)
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+		repeat wait()
+			plr.Character.Humanoid.PlatformStand = false
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+				speed = speed+125.0+(speed/maxspeed)
+				if speed > maxspeed then
+					speed = maxspeed
+				end
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+				speed = speed-250
+				if speed < 0 then
+					speed = 0
+				end
+			end
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+			else
+				bv.velocity = Vector3.new(0,0.1,0)
+			end
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+		until not flying
+		ctrl = {f = 0, b = 0, l = 0, r = 0}
+		lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		speed = 0
+		bg:Destroy()
+		bv:Destroy()
+		plr.Character.Humanoid.PlatformStand = false
+	end
+	mouse.KeyDown:connect(function(key)
+		if key:lower() == "r" then
+			if flying then flying = false
+			else
+				flying = true
+				Fly()
+			end
+		elseif key:lower() == "w" then
+			ctrl.f = 1
+		elseif key:lower() == "s" then
+			ctrl.b = -1
+		elseif key:lower() == "a" then
+			ctrl.l = -1
+		elseif key:lower() == "d" then
+			ctrl.r = 1
+		end
+	end)
+	mouse.KeyUp:connect(function(key)
+		if key:lower() == "w" then
+			ctrl.f = 0
+		elseif key:lower() == "s" then
+			ctrl.b = 0
+		elseif key:lower() == "a" then
+			ctrl.l = 0
+		elseif key:lower() == "d" then
+			ctrl.r = 0
+		end
+		wait(5)
+		hint:Destroy()
+	end)
+	Fly()
+end)
+
+CarSpeed.Name = "CarSpeed"
+CarSpeed.Parent = CarOptionsFrame
+CarSpeed.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CarSpeed.BorderColor3 = Color3.fromRGB(0, 170, 0)
+CarSpeed.Position = UDim2.new(0.495263875, 0, 0.278249472, 0)
+CarSpeed.Size = UDim2.new(0, 92, 0, 25)
+CarSpeed.Font = Enum.Font.SourceSans
+CarSpeed.Text = "Pink Car Spawner"
+CarSpeed.TextColor3 = Color3.fromRGB(0, 170, 0)
+CarSpeed.TextSize = 12.000
+CarSpeed.MouseButton1Click:connect(function()
+if _G.Executed == false or _G.Executed == nil then
+	_G.Executed = true
+	Spawned = false
+	Spawning = false
+	SpawnPad = nil
+	workspace.PlayerModels.ChildAdded:connect(function(Added)
+		if Spawned == false and Spawning == false then 
+			Owner = nil
+			CheckTries = 0
+			CheckSuccess = false
+			repeat
+				wait() 
+				CheckTries = CheckTries + 1
+				if Added:FindFirstChild("Owner") and Added:FindFirstChild("Type") and Added.Type.Value == "Vehicle" and Added:FindFirstChild("Settings") and Added.Settings:FindFirstChild("Color") then 
+					CheckSuccess = true
+					Owner = Added.Owner.Value
+				end
+			until CheckTries == 75 or CheckSuccess == true
+			if Owner == game.Players.LocalPlayer or game.ReplicatedStorage.Interaction.ClientIsWhitelisted:InvokeServer(Owner) == true then
+				Spawning = true
+				Added:WaitForChild("Settings")
+				Added.Settings:WaitForChild("Color")
+				print(tostring(Added.Settings.Color.Value))
+				if tostring(Added.Settings.Color.Value) == tostring(1032) then
+					Spawned = true
+					Spawning = false
+					print(Spawned)
+				elseif tostring(Added.Settings.Color.Value) ~= tostring(1032) then
+					if SpawnPad:FindFirstChild("ButtonRemote_SpawnButton") and SpawnPad:FindFirstChild("Owner") then 
+						if SpawnPad.Owner.Value == game.Players.LocalPlayer or game.ReplicatedStorage.Interaction.ClientIsWhitelisted:InvokeServer(SpawnPad.Owner.Value) == true then 
+							Spawning = false
+							warn(game.ReplicatedStorage.Interaction.RemoteProxy:FireServer(SpawnPad.ButtonRemote_SpawnButton))
+							Spawning = false
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	mouse = game.Players.LocalPlayer:GetMouse()
+	mouse.KeyDown:connect(function(key)
+		if key:lower() == "c" then
+			if mouse.Target.Parent:FindFirstChild("ButtonRemote_SpawnButton") then 
+				SpawnPad = mouse.Target.Parent
+				Spawned = false
+				Spawning = false
+				game.ReplicatedStorage.Interaction.RemoteProxy:FireServer(mouse.Target.Parent.ButtonRemote_SpawnButton)
+			else 
+				Spawned = true
+				Spawning = false
+			end
+		end
+	end)
 end
 end)
