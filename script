@@ -873,9 +873,9 @@ CarFly.TextSize = 14.000
 CarFly.MouseButton1Click:connect(function()
 	local Tool = Instance.new("HopperBin")
 	Tool.Parent = game.Players.LocalPlayer.Backpack
-	Tool.Name = "กดปุ่ม R บิน"
+	Tool.Name = "Press R"
 	local hint = Instance.new("Hint",game.Players.LocalPlayer.PlayerGui)
-	hint.Text = "กดปุ่ม R เพื่อบิน"
+	hint.Text = "Press R"
 	hint.Name = game.JobId
 	repeat wait()
 	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
