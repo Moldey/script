@@ -968,7 +968,7 @@ CarSpeed.BorderColor3 = Color3.fromRGB(0, 170, 0)
 CarSpeed.Position = UDim2.new(0.495263875, 0, 0.278249472, 0)
 CarSpeed.Size = UDim2.new(0, 92, 0, 25)
 CarSpeed.Font = Enum.Font.SourceSans
-CarSpeed.Text = "Pink Car Spawner"
+CarSpeed.Text = "Pink Car Spawner (C)"
 CarSpeed.TextColor3 = Color3.fromRGB(0, 170, 0)
 CarSpeed.TextSize = 12.000
 CarSpeed.MouseButton1Click:connect(function()
