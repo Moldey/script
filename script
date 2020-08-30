@@ -857,7 +857,7 @@ CarFly.BorderColor3 = Color3.fromRGB(0, 170, 0)
 CarFly.Position = UDim2.new(0.0299173482, 0, 0.278249472, 0)
 CarFly.Size = UDim2.new(0, 92, 0, 25)
 CarFly.Font = Enum.Font.SourceSans
-CarFly.Text = "Car Fly ()"
+CarFly.Text = "Car Fly (TOOL)"
 CarFly.TextColor3 = Color3.fromRGB(0, 170, 0)
 CarFly.TextSize = 14.000
 CarFly.MouseButton1Click:connect(function()
@@ -880,7 +880,7 @@ CarFly.MouseButton1Click:connect(function()
 	local maxspeed = 200
 	local speed = 0
 	
-	function Fly()
+	function Fly(G)
 		local bg = Instance.new("BodyGyro", torso)
 		bg.P = 9e4
 		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
