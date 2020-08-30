@@ -95,6 +95,7 @@ MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 MainFrame.Position = UDim2.new(0.356553614, 0, 0.299684525, 0)
 MainFrame.Size = UDim2.new(0, 313, 0, 253)
+MainFrame.Visible = false
 MainFrame.Draggable = false
 
 MainName.Name = "MainName"
