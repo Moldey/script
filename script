@@ -270,22 +270,7 @@ DupeMoney.Text = "Dupe Money"
 DupeMoney.TextColor3 = Color3.fromRGB(0, 170, 0)
 DupeMoney.TextSize = 20.000
 DupeMoney.MouseButton1Down:connect(function()
-plr = game:GetService("Players").LocalPlayer
-slot = plr.CurrentSaveSlot
-if Option == false then
-if slot.Value == -1 then
-Option = true
-slot.RobloxLocked = true
-DupeMoney.BackgroundColor3 = Color3.new(50, 50, 50)
-DupeLabel.Text = "Current save Will  Not Save"
-end
-else
-Option = false
-slot.RobloxLocked = false
-Dupe.BackgroundColor3 = Color3.new(0.7, 0, 0)
-DupeLabel.Text = "Current save Will Save"
-end
-end)
+print("Gay")
 end)
 
 DupeName.Name = "DupeName"
