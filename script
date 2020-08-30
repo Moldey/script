@@ -417,7 +417,13 @@ Walkspeed.Text = "Walkspeed"
 Walkspeed.TextColor3 = Color3.fromRGB(0, 170, 0)
 Walkspeed.TextSize = 20.000
 Walkspeed.MouseButton1Down:connect(function()
-game.Workspace.LocalPlayer.Humanoid.WalkSpeed = 100
+local speed = 100 -- Add the amount of speed you want here!
+ 
+spawn(function()
+while wait() do
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+end
+end)
 end)
 
 Jumppower.Name = "Jumppower"
@@ -430,6 +436,15 @@ Jumppower.Font = Enum.Font.SourceSans
 Jumppower.Text = "Jump Power"
 Jumppower.TextColor3 = Color3.fromRGB(0, 170, 0)
 Jumppower.TextSize = 20.000
+Jumppower.MouseButton1Down:connect(function()
+local jump = 100 -- Add the amount of jump power you want here!
+ 
+spawn(function()
+while wait() do
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = jump
+end
+end)
+end)
 
 Fly.Name = "Fly"
 Fly.Parent = LocalPlayer
