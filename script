@@ -269,9 +269,6 @@ DupeMoney.Font = Enum.Font.SourceSans
 DupeMoney.Text = "Dupe Money"
 DupeMoney.TextColor3 = Color3.fromRGB(0, 170, 0)
 DupeMoney.TextSize = 20.000
-DupeMoney.MouseButton1Down:connect(function()
-print("Gay")
-end)
 
 DupeName.Name = "DupeName"
 DupeName.Parent = DupeFrame
