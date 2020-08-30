@@ -50,7 +50,7 @@ StartFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 StartFrame.BorderColor3 = Color3.fromRGB(50, 50, 50)
 StartFrame.Position = UDim2.new(0.416132003, 0, 0.318611979, 0)
 StartFrame.Size = UDim2.new(0, 182, 0, 230)
-StartFrame.Visible = false
+StartFrame.Visible = true
 
 OpenButton.Name = "OpenButton"
 OpenButton.Parent = StartFrame
