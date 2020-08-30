@@ -638,3 +638,9 @@ Blueprints.Font = Enum.Font.SourceSans
 Blueprints.Text = "Blueprints"
 Blueprints.TextColor3 = Color3.fromRGB(0, 170, 0)
 Blueprints.TextSize = 20.000
+Blueprints.MouseButton1Down:connect(function()
+for i,v in pairs(game.ReplicatedStorage.Purchasables.Structures.BlueprintStructures:GetChildren()) do
+local clone = v:Clone()
+clone.Parent = game.Players.LocalPlayer.PlayerBlueprints.Blueprints
+end
+end)
